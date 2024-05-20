@@ -27,7 +27,9 @@ const Navbar = () => {
   //TODO make navbar appear and disappear en fonction du scroll
   return (
     <nav>
-      <div>Claire Song</div>
+      <div>
+        <button onClick={() => changeLocation("")}>Claire Song</button>
+      </div>
       <div className="pages">
         <ul>
           <li className={currLocation === "about" ? "featured" : ""}>

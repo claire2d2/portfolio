@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   width: 100dvw;
+  --main-red: #bf1a2f;
+  --main-yellow: #f7d002;
+  --main-violet: #4549ee;
+  --main-pink: #f00699;
+  --main-green: #018e42;
 }
 
 body {
