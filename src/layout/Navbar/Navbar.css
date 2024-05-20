@@ -4,6 +4,7 @@ nav {
   background-color: var(--main-red);
   display: flex;
   justify-content: space-between;
+  color: white;
 }
 
 .pages {

@@ -1,0 +1,38 @@
+.typing-container {
+  display: inline-block;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+.erasing {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  animation: untyping 1s steps(20, end) forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes untyping {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
