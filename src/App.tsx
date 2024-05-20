@@ -1,17 +1,24 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Homepage from "./pages/Homepage";
-
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Experiences from "./pages/Experiences";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Homepage />} />
-        </Route>
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Homepage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/experiences" element={<Experiences />} />
+          </Route>
+        </Routes>
+      </div>
     </>
   );
 }

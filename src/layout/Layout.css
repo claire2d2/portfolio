@@ -1,3 +1,14 @@
+.Navbar {
+  width: 100dvw;
+  height: 5dvh;
+}
+
 .Outlet {
   width: 100vh;
+  height: 90dvh;
+}
+
+.Footer {
+  height: 5dvh;
+  width: 100dvw;
 }
