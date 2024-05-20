@@ -1,0 +1,14 @@
+.Projects {
+  width: 100%;
+  height: 100%;
+}
+
+.allProjects {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneProject {
+  width: 33%;
+}
