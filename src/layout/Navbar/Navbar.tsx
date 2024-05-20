@@ -4,11 +4,26 @@ import { useNavigate } from "react-router-dom";
 
 // style
 import "./Navbar.css";
+import useScrollListener from "../../context/useScrollListener";
 import { HiMoon, HiSun } from "react-icons/hi";
+
 const Navbar = () => {
   const { darkMode, setDarkMode } = useSettings();
+  const [navClassList, setNavClassList] = useState<string[]>([]);
+  const scroll = useScrollListener();
   const [currLocation, setCurrLocation] = useState<string>("");
 
+  // make navbar disappear when scrolling down and reappear when scrolling up
+  useEffect(() => {
+    const _classList = [];
+
+    if (scroll.y > 50 && scroll.y - scroll.lastY > 0)
+      _classList.push("nav-bar--hidden");
+
+    setNavClassList(_classList);
+  }, [scroll.y, scroll.lastY]);
+
+  // highlight link if the user is currently at that page
   useEffect(() => {
     setCurrLocation(location.pathname.split("/")[1]);
   }, []);
@@ -26,15 +41,12 @@ const Navbar = () => {
 
   //TODO make navbar appear and disappear en fonction du scroll
   return (
-    <nav>
+    <nav className={navClassList.join(" ")}>
       <div>
         <button onClick={() => changeLocation("")}>Claire Song</button>
       </div>
       <div className="pages">
         <ul>
-          <li className={currLocation === "about" ? "featured" : ""}>
-            <button onClick={() => changeLocation("about")}>About me</button>
-          </li>
           <li className={currLocation === "projects" ? "featured" : ""}>
             <button onClick={() => changeLocation("projects")}>Projects</button>
           </li>
@@ -42,6 +54,9 @@ const Navbar = () => {
             <button onClick={() => changeLocation("experiences")}>
               Experiences
             </button>
+          </li>
+          <li className={currLocation === "other" ? "featured" : ""}>
+            <button onClick={() => changeLocation("other")}>Other</button>
           </li>
         </ul>
       </div>

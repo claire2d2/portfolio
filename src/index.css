@@ -2,11 +2,20 @@
   margin: 0;
   padding: 0;
   width: 100dvw;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
   --main-red: #bf1a2f;
   --main-yellow: #f7d002;
   --main-violet: #4549ee;
   --main-pink: #f00699;
   --main-green: #018e42;
+}
+
+/* hide scrollbar but allow scrolling */
+
+:root::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 body {

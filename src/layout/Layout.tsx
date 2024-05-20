@@ -6,12 +6,12 @@ import "./Layout.css";
 
 const Layout = () => {
   return (
-    <div className="Navbar">
+    <div>
       <Navbar />
       <div className="Outlet">
         <Outlet />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
