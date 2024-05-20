@@ -8,12 +8,19 @@ nav {
 
 .pages {
   width: 50%;
+  align-items: center;
+  justify-items: center;
+  padding: 10px 0;
   & ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
   }
+}
+
+.featured {
+  font-weight: bolder;
 }
 
 .settings {
