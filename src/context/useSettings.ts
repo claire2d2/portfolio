@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { SettingsContext } from "./SettingsContextWrapper";
-const useUser = () => {
+const useSettings = () => {
   const context = useContext(SettingsContext);
   if (context === null) {
     throw new Error(
@@ -10,4 +10,4 @@ const useUser = () => {
   return context;
 };
 
-export default useUser;
+export default useSettings;
