@@ -23,3 +23,16 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+.theme-light {
+  --bg-main: #bf1a2f;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+}
+.theme-dark {
+  --bg-main: #243133;
+  --color-secondary: #243133;
+  --color-accent: #12cdea;
+  --font-color: #ffffff;
+}
