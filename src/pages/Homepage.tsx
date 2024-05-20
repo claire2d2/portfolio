@@ -34,11 +34,62 @@ const Homepage = () => {
           <div className={isTyping ? "erasing" : "typed-out"}>{profession}</div>
         </div>
       </section>
-      <section className="about">
+      <section className="part">
         <h2>About me :</h2>
+        <div className="part-content">
+          <div>
+            <p>
+              I started my career 5 years ago as a Recruitment Manager for tech
+              profiles before moving on to Project Manager roles, focusing on
+              digital transformation. During this time, I was simultaneously
+              happy to learn new things, but also increasingly frustrated with
+              not deeply understanding the technical issues I was working with,
+              delegating that task to other people.
+            </p>
+            <p>
+              This led me to pursue a certification in Web Development with
+              Ironhack, where I graduated top of my class. I now wish to apply
+              my newfound knowledge in a fast-paced environment, where I can
+              keep on learning, and hopefully one day, create opportunities for
+              other people to learn from me as well. My previous experiences
+              have proven me to be a fast learner, to be able to adapt very
+              quickly to new environments and always make my colleagues smile! I
+              am confident that I have the skills and thirst to learn that will
+              enable me to thrive in this new stage of my professional career.
+            </p>
+          </div>
+        </div>
       </section>
-      <section className="skills">
+      <section className="part">
         <h2>Skills:</h2>
+        <div className="part-content">
+          <div className="skills">
+            <h3>Languages</h3>
+            <ul>
+              <li>Javascript (ES6)</li>
+              <li>Typescript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div className="skills">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>React</li>
+              <li>Express.js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div className="skills">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git / Github</li>
+              <li>MongoDB</li>
+              <li>Chome DevTools</li>
+              <li>Thunder Client</li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section className="projects">
         <h2>Featured projects:</h2>

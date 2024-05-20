@@ -14,7 +14,7 @@
 
 .typed-out {
   overflow: hidden;
-  border-right: 0.15em solid orange;
+  border-right: 0.15em solid var(--text-main);
   white-space: nowrap;
   animation: typing 1s steps(20, end) forwards;
   width: 0;
@@ -22,7 +22,7 @@
 
 .erasing {
   overflow: hidden;
-  border-right: 0.15em solid orange;
+  border-right: 0.15em solid var(--text-main);
   white-space: nowrap;
   animation: untyping 1s steps(20, end) forwards;
   width: 0;
@@ -42,5 +42,27 @@
   }
   to {
     width: 0;
+  }
+}
+
+/* About section */
+
+.part {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  & h2 {
+    flex-basis: 20%;
+  }
+  & p {
+    padding: 0.5rem;
+  }
+  & .part-content {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .skills {
+    flex-basis: 30%;
   }
 }
