@@ -1,5 +1,10 @@
 .header {
+  padding-top: 2em;
   text-align: center;
+  font-size: 2em;
+  & h1 {
+    font-size: 2.3rem;
+  }
 }
 
 /* everything for the typing effect */
@@ -12,7 +17,6 @@
   border-right: 0.15em solid orange;
   white-space: nowrap;
   animation: typing 1s steps(20, end) forwards;
-  font-size: 1.6rem;
   width: 0;
 }
 
@@ -21,7 +25,6 @@
   border-right: 0.15em solid orange;
   white-space: nowrap;
   animation: untyping 1s steps(20, end) forwards;
-  font-size: 1.6rem;
   width: 0;
 }
 @keyframes typing {
