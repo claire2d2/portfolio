@@ -1,9 +1,12 @@
 .Outlet {
-  width: 100vw;
-  height: 85vh;
+  width: 100dvw;
+  background: var(--bg-main);
+  color: var(--font-color);
 }
 
 .Footer {
-  height: 5vh;
-  width: 100vw;
+  height: 5dvh;
+  width: 100dvw;
+  background: var(--bg-main);
+  color: white;
 }
