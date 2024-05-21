@@ -33,8 +33,13 @@ const Navbar = () => {
   function changeLocation(destination: string) {
     navigate(`/${destination}`);
     setCurrLocation(destination);
+    scrollToTop();
   }
 
+  // scroll back to top when navigating between pages
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
   // handle dark mode
   // function to set a given theme/color-scheme
   function setTheme(themeName: string) {

@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 import allProjects from "../../data/projects.json";
 
 import OneProject from "../../components/Projects/OneProject";
@@ -20,6 +22,9 @@ const Projects = () => {
             />
           );
         })}
+      </div>
+      <div>
+        <HashLink to="/#projects">Back to homepage</HashLink>
       </div>
     </div>
   );

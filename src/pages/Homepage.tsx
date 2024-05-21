@@ -33,6 +33,11 @@ const Homepage = () => {
     }
   }, 4000);
 
+  // scroll to top when clicking on a link
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div>
       <section className="header" id="top">
@@ -106,7 +111,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="project-section">
+      <section className="project-section" id="projects">
         <h2>Some of my projects:</h2>
         <div>
           <div className="featured-project">
@@ -224,7 +229,9 @@ const Homepage = () => {
             </div>
           </div>
           <div className="link-to">
-            <Link to="/projects">See the rest of my projects</Link>
+            <Link to="/projects" onClick={scrollToTop}>
+              See the rest of my projects
+            </Link>
           </div>
         </div>
       </section>
