@@ -77,6 +77,10 @@
   }
   & p {
     padding: 0.5rem;
+    & span {
+      font-weight: bold;
+      color: var(--text-main);
+    }
   }
   & .part-content {
     flex-basis: 80%;

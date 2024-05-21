@@ -18,7 +18,7 @@ footer {
     width: 2rem;
   }
   & svg {
-    fill: var(--color-main);
+    fill: var(--text-main);
     height: 2rem;
     width: 2rem;
     &:hover {
