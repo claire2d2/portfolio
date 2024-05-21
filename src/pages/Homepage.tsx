@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 // import { useNavigate } from "react-router-dom";
 
 import "./Homepage.css";
@@ -34,7 +35,7 @@ const Homepage = () => {
 
   return (
     <div>
-      <section className="header">
+      <section className="header" id="top">
         <div className="picture">
           <img src={meImg} alt="picture of Claire Song" />
         </div>
@@ -237,6 +238,11 @@ const Homepage = () => {
         Feel free to navigate the rest of the website to see more details about
         my projects, my past experiences/education and my pastmes. I am
         currently available to work for Paris-based or fully remote positions.
+        <div>
+          <HashLink smooth to="#top">
+            Scroll back to top
+          </HashLink>
+        </div>
       </section>
     </div>
   );
