@@ -67,6 +67,11 @@ const Navbar = () => {
     toggleTheme();
   }
 
+  // display correct icon depending on dark mode
+  useEffect(() => {
+    toggleTheme();
+  }, []);
+
   //TODO make navbar appear and disappear en fonction du scroll
   return (
     <nav className={navClassList.join(" ")}>

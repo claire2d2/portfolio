@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.logos {
+  display: flex;
+  width: 10rem;
+  justify-content: center;
+  gap: 1px;
+  height: 100%;
+  align-items: center;
+  & a {
+    height: 2rem;
+    width: 2rem;
+  }
+  & svg {
+    fill: var(--color-main);
+    height: 2rem;
+    width: 2rem;
+    &:hover {
+      fill: var(--color-accent);
+    }
+  }
+}
