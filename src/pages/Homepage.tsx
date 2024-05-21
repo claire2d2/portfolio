@@ -233,6 +233,11 @@ const Homepage = () => {
           <div>My resume</div> <HiExternalLink />
         </a>
       </section>
+      <section>
+        Feel free to navigate the rest of the website to see more details about
+        my projects, my past experiences/education and my pastmes. I am
+        currently available to work for Paris-based or fully remote positions.
+      </section>
     </div>
   );
 };

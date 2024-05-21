@@ -4,7 +4,6 @@ import Homepage from "./pages/Homepage";
 import Projects from "./pages/Projects/Projects";
 import Experiences from "./pages/Experiences/Experiences";
 import Other from "./pages/Other/Other";
-import Contact from "./pages/Contact/Contact";
 import "./App.css";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/experiences" element={<Experiences />} />
             <Route path="/other" element={<Other />} />
-            <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
       </div>
