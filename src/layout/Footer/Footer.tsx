@@ -1,9 +1,12 @@
+import { HashLink } from "react-router-hash-link";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer>
-      <div>Contact me</div>
+      <div>
+        <HashLink to="/other#contact">Contact me</HashLink>
+      </div>
       <div className="logos">
         <a href="https://github.com/claire2d2" target="_blank">
           <svg
