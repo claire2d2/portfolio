@@ -2,7 +2,13 @@ import "./Experiences.css";
 const Experiences = () => {
   return (
     <div className="Experiences">
-      <h2>Experiences</h2>
+      <h1>Experiences & Education</h1>
+      <section className="part">
+        <h2>Technical skills</h2>
+      </section>
+      <section className="part">
+        <h2>Soft skills</h2>
+      </section>
       <section className="part">
         <h2>Experience:</h2>
 

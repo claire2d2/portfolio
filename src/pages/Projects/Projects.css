@@ -1,14 +1,19 @@
 .Projects {
   width: 100%;
   height: 100%;
+  & h2 {
+    font-size: 2rem;
+    color: var(--text-main);
+    text-align: center;
+    padding: 30px 0;
+  }
 }
 
 .allProjects {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-}
-
-.oneProject {
-  width: 33%;
+  gap: 8px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }

@@ -1,6 +1,49 @@
 .projectStyle {
+  width: 30%;
   text-align: center;
   border-style: solid;
   border-width: 2px;
-  border-color: gray;
+  border-color: lightgray;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: left;
+  height: 15rem;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 10px 0;
+  & h4 {
+    color: var(--text-main);
+  }
+  & a {
+    &:hover {
+      color: var(--text-hover);
+    }
+  }
+}
+
+.project-date {
+  font-size: small;
+}
+
+.project-desc {
+  padding: 10px 0;
+  width: 100%;
+}
+.labels {
+  display: flex;
+  gap: 2px;
+}
+
+.one-label {
+  background-color: var(--color-accent);
+  color: white;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: smaller;
 }

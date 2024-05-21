@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Air2d2",
+    "date": "April 2024",
+    "img": "",
+    "description": "My first ever Full Stack project, joining my passion for coding and aerial arts! I developed this during my Ironhack web development bootcamp in under two weeks. The website accompanies users in their training for aerial arts (pole dance, aerial hoop and contorsion). All CRUD operations are fully functional in the app.",
+    "labels": ["Typescript", "React", "Tailwind"],
+    "code": "https://github.com/claire2d2/aerial-front",
+    "link": "https://air2d2.netlify.app"
+  },
+  {
+    "name": "Gotta Cache Them All",
+    "date": "April 2024",
+    "img": "",
+    "description": "A nostalgic SPA developed using React in a team of three, where you can view data on the first three generations of pokemon, and create customized teams. This app was my first foray with Typescript (self-taught as Typescript was not part of the Ironhack curriculum).",
+    "labels": ["Typescript", "React", "Tailwind"],
+    "code": "https://github.com/claire2d2/poke-project",
+    "link": "https://cache-them-all.netlify.app"
+  },
+
+  {
+    "name": "Birthday website",
+    "date": "April 2024",
+    "img": "",
+    "description": "A personal project using React where guests could register for an event with an integrated google form. I used Tailwind and Flowbite React components for faster styling and responsiveness.",
+    "labels": ["Javascript", "React", "Tailwind"],
+    "code": "https://github.com/claire2d2/anniverclaire-react",
+    "link": "https://rides.claire2d2.com"
+  },
+  {
+    "name": "Yes We Kanban",
+    "date": "March 2024",
+    "img": "",
+    "description": "Developed with Raphael, our personal challenge with this project was to implement Tailwind and the drag and drop functionality, for a trello-like kanban task manager app.",
+    "labels": ["Javascript", "React", "Tailwind"],
+    "code": "https://github.com/claire2d2/kanban-project",
+    "link": null
+  },
+  {
+    "name": "Bool you can eat hotpot",
+    "date": "March 2024",
+    "img": "",
+    "description": "My first ever web project, where I applied recently learned DOM manipulation to create a snake-like game where the player has to score the most points possible ... all the while avoiding coriander.",
+    "labels": ["Javascript"],
+    "code": "https://github.com/claire2d2/game-project",
+    "link": "https://claire2d2.github.io/game-project/"
+  }
+]
