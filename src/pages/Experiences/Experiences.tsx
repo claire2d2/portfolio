@@ -3,6 +3,55 @@ const Experiences = () => {
   return (
     <div className="Experiences">
       <h2>Experiences</h2>
+      <section className="part">
+        <h2>Experience:</h2>
+
+        <div className="exp-content">
+          <div className="one-experience">
+            <div className="exp-details">
+              <div className="job-title">
+                <div className="bullet" />
+                Digital transformation consultant
+              </div>
+              <div>
+                <a href="https://mc2i.fr" target="_blank">
+                  mc2i
+                </a>
+              </div>
+              <div>Job description</div>
+            </div>
+          </div>
+          <div className="one-experience">
+            <div className="exp-details">
+              <div className="job-title">
+                <div className="bullet" />
+                CRM Project Manager
+              </div>
+              <div>
+                <a href="https://mc2i.fr" target="_blank">
+                  mc2i
+                </a>
+              </div>
+              <div>Job description</div>
+            </div>
+          </div>
+          <div className="one-experience">
+            <div className="exp-details">
+              <div className="job-title">
+                <div className="bullet" />
+                Project Manager
+              </div>
+              <div>
+                <a href="https://mc2i.fr" target="_blank">
+                  mc2i
+                </a>
+              </div>
+              <div>Job description</div>
+            </div>
+          </div>
+          <div>See all my </div>
+        </div>
+      </section>
       <h2>Education</h2>
       <h2>Other certifications</h2>
     </div>

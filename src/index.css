@@ -7,7 +7,7 @@
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
   --main-red: #bf1a2f;
-  --main-yellow: #f7d002;
+  --main-yellow: #ff8c00;
   --main-violet: #4549ee;
   --main-pink: #f00699;
   --main-green: #018e42;
@@ -32,17 +32,19 @@ li {
 }
 
 .theme-light {
-  --bg-main: #fbfbfe;
+  --bg-main: #f8f5f3;
   --color-main: #bf1a2f;
   --text-main: #bf1a2f;
+  --text-hover: #fb543e;
   --color-secondary: #fbfbfe;
-  --color-accent: #fd6f53;
+  --color-accent: #f7d002;
   --font-color: #000000;
 }
 .theme-dark {
   --bg-main: #171c28;
   --color-main: #243133;
-  --text-main: #fbfbfe;
+  --text-main: #d87000;
+  --text-hover: #fb9f3e;
   --color-secondary: #243133;
   --color-accent: #12cdea;
   --font-color: #fbfbfe;

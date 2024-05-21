@@ -1,10 +1,30 @@
 .header {
   padding-top: 2em;
-  text-align: center;
+  width: 30em;
+  margin: 0 auto;
+  text-align: left;
   font-size: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  & img {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    /* box-shadow: 5px 5px 4px; */
+    object-fit: cover;
+  }
   & h1 {
     font-size: 2.3rem;
+    color: var(--text-main);
   }
+}
+
+.intro {
+  align-self: center;
 }
 
 /* everything for the typing effect */
@@ -53,6 +73,7 @@
   padding: 10px 0;
   & h2 {
     flex-basis: 20%;
+    color: var(--text-main);
   }
   & p {
     padding: 0.5rem;
@@ -64,5 +85,96 @@
   }
   & .skills {
     flex-basis: 30%;
+  }
+}
+
+/* 
+** Projects section 
+*/
+
+.project-section {
+  & h2 {
+    background-color: var(--text-main);
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+  }
+}
+
+.featured-project {
+  display: flex;
+  gap: 20px;
+  width: 75%;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  & h4 {
+    font-size: 1.4rem;
+  }
+
+  & a {
+    color: var(--text-main);
+    &:visited {
+      color: var(--text-main);
+    }
+    &:hover {
+      color: var(--text-hover);
+    }
+  }
+}
+
+.project-screen {
+  & img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    opacity: 50%;
+    &:hover {
+      opacity: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.project-details {
+  margin: 0 20px;
+}
+.project-desc {
+  width: 40em;
+  line-height: 1.2rem;
+  & p {
+    margin: 10px auto;
+  }
+  & span {
+    font-weight: 620;
+  }
+}
+
+.tech-labels {
+  display: flex;
+  gap: 5px;
+}
+
+.project-source {
+  display: flex;
+  justify-content: end;
+  font-size: 1.7rem;
+}
+
+.link-to {
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* resume */
+.resume {
+  color: white;
+  background-color: var(--text-main);
+  & a {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
   }
 }
