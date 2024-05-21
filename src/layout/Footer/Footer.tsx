@@ -4,9 +4,8 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div>
-        <HashLink to="/other#contact">Contact me</HashLink>
-      </div>
+      <div>© Claire Song</div>
+      <HashLink to="/other#contact">Contact me</HashLink>
       <div className="logos">
         <a href="https://github.com/claire2d2" target="_blank">
           <svg

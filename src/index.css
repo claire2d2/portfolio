@@ -28,7 +28,9 @@ h4,
 div,
 p,
 ul,
-li {
+li,
+a,
+svg {
   margin: 0;
   padding: 0;
 }
