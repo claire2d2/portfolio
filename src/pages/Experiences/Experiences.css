@@ -3,20 +3,28 @@
   height: 100%;
 }
 
-/* experiences */
-.one-experience {
-  border-left-style: solid;
-  position: relative;
-}
-
-.bullet {
-  position: absolute;
-  top: 0;
-  left: -10px;
-  height: 1rem;
-  width: 1rem;
-  background-color: var(--color-accent);
-  border-radius: 50%;
+.exp-content {
+  display: flex;
+  flex-direction: column;
+  & .one-experience {
+    border-left-style: solid;
+    position: relative;
+    & .bullet {
+      position: absolute;
+      top: 0;
+      left: -10px;
+      height: 1rem;
+      width: 1rem;
+      background-color: var(--color-accent);
+      border-radius: 50%;
+      &.bullet-tech {
+        background-color: var(--text-main);
+      }
+    }
+  }
+  & .one-experience:not(:last-child) {
+    padding-bottom: 20px;
+  }
 }
 
 .job-title {
