@@ -1,24 +1,5 @@
 [
   {
-    "name": "Air2d2",
-    "date": "April 2024",
-    "img": "",
-    "description": "My first ever Full Stack project, joining my passion for coding and aerial arts! I developed this during my Ironhack web development bootcamp in under two weeks. The website accompanies users in their training for aerial arts (pole dance, aerial hoop and contorsion). All CRUD operations are fully functional in the app.",
-    "labels": ["Typescript", "React", "Tailwind"],
-    "code": "https://github.com/claire2d2/aerial-front",
-    "link": "https://air2d2.netlify.app"
-  },
-  {
-    "name": "Gotta Cache Them All",
-    "date": "April 2024",
-    "img": "",
-    "description": "A nostalgic SPA developed using React in a team of three, where you can view data on the first three generations of pokemon, and create customized teams. This app was my first foray with Typescript (self-taught as Typescript was not part of the Ironhack curriculum).",
-    "labels": ["Typescript", "React", "Tailwind"],
-    "code": "https://github.com/claire2d2/poke-project",
-    "link": "https://cache-them-all.netlify.app"
-  },
-
-  {
     "name": "Birthday website",
     "date": "April 2024",
     "img": "",

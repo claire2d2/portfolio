@@ -1,0 +1,59 @@
+.featured-project {
+  display: flex;
+  gap: 20px;
+  width: 75%;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  & h4 {
+    font-size: 1.4rem;
+  }
+
+  & a {
+    color: var(--text-main);
+    &:visited {
+      color: var(--text-main);
+    }
+    &:hover {
+      color: var(--text-hover);
+    }
+  }
+}
+
+.project-screen {
+  & img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    opacity: 50%;
+    &:hover {
+      opacity: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.project-details {
+  margin: 0 20px;
+}
+.project-desc {
+  width: 40em;
+  line-height: 1.2rem;
+  & p {
+    margin: 10px auto;
+  }
+  & span {
+    font-weight: 620;
+  }
+}
+
+.tech-labels {
+  display: flex;
+  gap: 5px;
+}
+
+.project-source {
+  display: flex;
+  justify-content: end;
+  font-size: 1.7rem;
+}

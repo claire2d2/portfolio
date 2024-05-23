@@ -1,13 +1,15 @@
 import { HashLink } from "react-router-hash-link";
 
-import allProjects from "../../data/projects.json";
-
-import OneProject from "../../components/Projects/OneProject";
+import allProjects from "../../../data/projects.json";
+import FeaturedProjects from "../FeaturedProjects/FeaturedProjects";
+import OneProject from "../OneProject/OneProject";
 import "./Projects.css";
 
 const Projects = () => {
   return (
     <div className="Projects">
+      <h2>Some of my projects:</h2>
+      <FeaturedProjects />
       <div className="allProjects">
         {allProjects.map((project) => {
           return (
