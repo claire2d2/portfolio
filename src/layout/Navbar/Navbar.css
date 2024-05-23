@@ -1,6 +1,6 @@
 nav {
   width: 100vw;
-  height: 10dvh;
+  height: 8dvh;
   position: sticky;
   top: 0;
   font-family: sans-serif;
@@ -15,6 +15,11 @@ nav {
 
 nav.nav-bar--hidden {
   transform: translateY(-100%);
+}
+
+.nav-title {
+  font-size: 1.4rem;
+  padding: 0 20px;
 }
 
 .homepage {

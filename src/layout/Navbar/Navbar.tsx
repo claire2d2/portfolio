@@ -1,6 +1,5 @@
 import useSettings from "../../context/useSettings";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 // style
@@ -12,7 +11,6 @@ const Navbar = () => {
   const { darkMode, setDarkMode, setLanguage } = useSettings();
   const [navClassList, setNavClassList] = useState<string[]>([]);
   const scroll = useScrollListener();
-  const [currLocation, setCurrLocation] = useState<string>("");
 
   // make navbar disappear when scrolling down and reappear when scrolling up
   useEffect(() => {
@@ -24,20 +22,6 @@ const Navbar = () => {
     setNavClassList(_classList);
   }, [scroll.y, scroll.lastY]);
 
-  // highlight link if the user is currently at that page
-  useEffect(() => {
-    setCurrLocation(location.pathname.split("/")[1]);
-  }, []);
-
-  function changeLocation(destination: string) {
-    setCurrLocation(destination);
-    scrollToTop();
-  }
-
-  // scroll back to top when navigating between pages
-  function scrollToTop() {
-    window.scrollTo(0, 0);
-  }
   // handle dark mode
   // function to set a given theme/color-scheme
   function setTheme(themeName: string) {
@@ -83,35 +67,21 @@ const Navbar = () => {
   //TODO make navbar appear and disappear en fonction du scroll
   return (
     <nav className={navClassList.join(" ")}>
-      <div>
-        <button onClick={() => changeLocation("")}>Claire Song</button>
-      </div>
+      <div className="nav-title">Claire Song</div>
       <div className="pages">
         <ul>
           <li>
-            <HashLink
-              smooth
-              to="#about"
-              onClick={() => changeLocation("about")}
-            >
+            <HashLink smooth to="#about">
               About
             </HashLink>
           </li>
           <li>
-            <HashLink
-              smooth
-              to="#projects"
-              onClick={() => changeLocation("projects")}
-            >
+            <HashLink smooth to="#projects">
               Projects
             </HashLink>
           </li>
           <li>
-            <HashLink
-              smooth
-              to="#experiences"
-              onClick={() => changeLocation("experiences")}
-            >
+            <HashLink smooth to="#experiences">
               Experiences
             </HashLink>
           </li>
