@@ -4,7 +4,10 @@ import { HashLink } from "react-router-hash-link";
 import useSettings from "../context/useSettings";
 
 import About from "../components/About/About";
+import Details from "../components/Details/Details";
 import Projects from "../components/Projects/Projects/Projects";
+import Experiences from "../components/Experiences/Experiences";
+import Contact from "../components/Contact/Contact";
 
 import "./Homepage.css";
 import meImg from "../assets/images/me.jpeg";
@@ -77,55 +80,21 @@ const Homepage = () => {
         </div>
       </section>
       <About />
-      <section className="part">
-        <h2>Skills:</h2>
-        <div className="part-content">
-          <div className="skills">
-            <h3>Languages</h3>
-            <ul>
-              <li>Javascript (ES6)</li>
-              <li>Typescript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-          <div className="skills">
-            <h3>Frameworks</h3>
-            <ul>
-              <li>React</li>
-              <li>Express.js</li>
-              <li>Tailwind CSS</li>
-            </ul>
-          </div>
-          <div className="skills">
-            <h3>Tools</h3>
-            <ul>
-              <li>Git / Github</li>
-              <li>MongoDB</li>
-              <li>Chome DevTools</li>
-              <li>Thunder Client</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <Details />
       <Projects />
       <section className="project-section" id="projects"></section>
-
+      <Experiences />
       <section className="resume">
         <a href={resume} target="_blank">
           <div>My resume</div> <HiExternalLink />
         </a>
       </section>
-      <section>
-        Feel free to navigate the rest of the website to see more details about
-        my projects, my past experiences/education and my pastmes. I am
-        currently available to work for Paris-based or fully remote positions.
-        <div>
-          <HashLink smooth to="#top">
-            Scroll back to top
-          </HashLink>
-        </div>
-      </section>
+      <Contact />
+      <div>
+        <HashLink smooth to="#top">
+          Scroll back to top
+        </HashLink>
+      </div>
     </div>
   );
 };

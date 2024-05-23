@@ -1,0 +1,14 @@
+.likes {
+  display: flex;
+  justify-content: space-between;
+  & div {
+    flex-basis: 50%;
+    text-align: center;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

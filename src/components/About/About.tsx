@@ -1,4 +1,5 @@
 import useSettings from "../../context/useSettings";
+import "./About.css";
 
 const About = () => {
   const { language } = useSettings();

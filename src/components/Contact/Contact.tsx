@@ -1,13 +1,6 @@
-import "./Other.css";
-const Other = () => {
-  // TODO do form and show confirmation message when message has been sent
+const Contact = () => {
   return (
-    <div className="Other">
-      <h2>More about me</h2>
-      <div>Languages</div>
-      <div>I like:</div>
-      <div>I dislike:</div>
-      <h2>Contact me:</h2>
+    <div>
       <form action="" id="contact">
         <div>
           Please note that this form is currently in construction, and will not
@@ -31,4 +24,4 @@ const Other = () => {
   );
 };
 
-export default Other;
+export default Contact;

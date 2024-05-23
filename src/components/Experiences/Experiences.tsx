@@ -2,23 +2,35 @@ import "./Experiences.css";
 const Experiences = () => {
   return (
     <div className="Experiences">
-      <h1>Experiences & Education</h1>
       <section className="part">
-        <h2>Technical skills</h2>
-        <div>Move what is on homepage here ?</div>
-      </section>
-      <section className="part">
-        <h2>Other skills</h2>
-        <div>Teamwork, workshop animation, training</div>
-        <div>
-          I speak:
-          <ul>
-            <li>French</li>
-            <li>English</li>
-            <li>Chinese</li>
-            <li>Spanish</li>
-            <li>And I used to speak German well, but alas ...</li>
-          </ul>
+        <h2>Technical Skills:</h2>
+        <div className="part-content">
+          <div className="skills">
+            <h3>Languages</h3>
+            <ul>
+              <li>Javascript (ES6)</li>
+              <li>Typescript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div className="skills">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>React</li>
+              <li>Express.js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div className="skills">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git / Github</li>
+              <li>MongoDB</li>
+              <li>Chome DevTools</li>
+              <li>Thunder Client</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section className="part">
