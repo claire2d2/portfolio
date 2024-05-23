@@ -67,7 +67,13 @@ nav.nav-bar--hidden {
     transition: ease-in-out;
   }
   & select {
-    background-color: aqua;
+    background-color: transparent;
+    color: var(--font-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    & option {
+      background-color: var(--bg-main);
+    }
   }
 }
 
