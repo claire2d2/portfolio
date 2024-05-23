@@ -1,7 +1,7 @@
 :root {
   margin: 0;
-  padding: 0;
-  width: 100dvw;
+  box-sizing: border-box;
+  width: 100vw;
   font-family: "Montserrat", sans-serif;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */

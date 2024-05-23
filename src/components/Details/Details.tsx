@@ -5,7 +5,7 @@ import { HiMail } from "react-icons/hi";
 
 const Details = () => {
   return (
-    <div>
+    <div className="Details">
       <section className="part">
         <h2>{""}</h2>
         <div className="likes part-content">

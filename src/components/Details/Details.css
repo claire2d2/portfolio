@@ -79,3 +79,28 @@
     }
   }
 }
+
+@media all and (min-width: 320px) and (max-width: 991px) and (orientation: portrait) {
+  .Details {
+    & .part {
+      display: none;
+    }
+  }
+
+  .socials {
+    & h3 {
+      width: 100%;
+      margin: 1rem auto;
+    }
+    & #arrow {
+      left: 2rem;
+      transform: rotate(0deg);
+    }
+    & ul {
+      flex-direction: column;
+      gap: 1px;
+      margin: 0 auto;
+      padding: 15px 0;
+    }
+  }
+}

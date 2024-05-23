@@ -1,5 +1,4 @@
 import useSettings from "../../context/useSettings";
-import "./About.css";
 
 const About = () => {
   const { language } = useSettings();
@@ -12,11 +11,13 @@ const About = () => {
             <p>
               I started my career <span>5 years ago</span> as a Recruitment
               Manager for tech profiles before moving on to Project Manager
-              roles, focusing on digital transformation. During this time, I was
-              simultaneously <span>happy to learn new things</span>, but also
-              increasingly frustrated with not deeply understanding the
-              technical issues I was working with, delegating that task to other
-              people.
+              roles, focusing on digital transformation.
+            </p>
+            <p>
+              During this time, I was simultaneously{" "}
+              <span>happy to learn new things</span>, but also increasingly
+              frustrated with not deeply understanding the technical issues I
+              was working with, delegating that task to other people.
             </p>
             <p>
               This led me to pursue a{" "}
@@ -24,12 +25,7 @@ const About = () => {
               I graduated top of my class. I now wish to apply my newfound
               knowledge in a fast-paced environment, where I can keep on
               learning, and hopefully one day, create opportunities for other
-              people to learn from me as well. My previous experiences have
-              proven me to be a <span>fast learner</span>, to be able to adapt
-              very quickly to new environments and always make my colleagues{" "}
-              <span>smile</span>! I am confident that I have the skills and
-              thirst to learn that will enable me to thrive in this new stage of
-              my professional career.
+              people to learn from me as well.
             </p>
           </div>
         )}
