@@ -7,7 +7,7 @@
   }
 }
 
-.allProjects {
+.show-projects {
   width: 100%;
   display: flex;
   gap: 8px;
