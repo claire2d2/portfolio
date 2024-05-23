@@ -35,3 +35,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@media all and (min-width: 320px) and (max-width: 991px) and (orientation: portrait) {
+  .show-projects {
+    flex-direction: column;
+  }
+}

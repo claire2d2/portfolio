@@ -48,3 +48,9 @@
   padding: 2px 5px;
   font-size: smaller;
 }
+
+@media all and (min-width: 320px) and (max-width: 991px) and (orientation: portrait) {
+  .projectStyle {
+    width: 80%;
+  }
+}
