@@ -2,6 +2,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="Contact">
+      <h2>Contact me:</h2>
       <form action="" id="contact">
         <div>
           <i>

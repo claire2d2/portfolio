@@ -1,9 +1,11 @@
 .Projects {
   & h2 {
-    background-color: var(--text-main);
     text-align: center;
     padding: 10px 0;
-    color: white;
+    color: var(--text-main);
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: "Poetsen One";
   }
 }
 

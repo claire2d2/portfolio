@@ -2,9 +2,9 @@ import "./Experiences.css";
 const Experiences = () => {
   return (
     <div className="Experiences">
-      <section className="part">
+      <section className="skills-part">
         <h2>Technical Skills:</h2>
-        <div className="part-content">
+        <div className="skills-content">
           <div className="skills">
             <h3>Languages</h3>
             <ul>

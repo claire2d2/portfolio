@@ -1,9 +1,32 @@
 .likes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3px;
+  padding: 10px 0;
+  margin: 1px auto;
+  text-align: left;
+  width: 90%;
+  & h3 {
+    color: var(--text-main);
+  }
   & div {
-    flex-basis: 50%;
-    text-align: center;
+    flex-basis: 30%;
+    margin: 1px auto;
+    &:nth-child(odd):hover {
+      transform: rotate(-2deg);
+    }
+    &:nth-child(2):hover {
+      transform: rotate(2deg);
+    }
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 5px;
+      & li:nth-child(odd) {
+        margin-left: 10px;
+      }
+    }
   }
 }
 
@@ -25,7 +48,7 @@
     transform: rotate(0deg);
     height: 3rem;
     width: 2rem;
-    fill: var(--text-main);
+    fill: white;
   }
   ul {
     display: flex;

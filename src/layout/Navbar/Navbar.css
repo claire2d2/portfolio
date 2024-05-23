@@ -18,9 +18,9 @@ nav.nav-bar--hidden {
 }
 
 .nav-title {
-  font-size: 1.4rem;
-  padding: 0 20px;
-  font-family: "Poetsen One", sans-serif;
+  font-size: 2.5rem;
+  padding-left: 20px;
+  font-family: "Luckiest Guy", sans-serif;
 }
 
 .homepage {
@@ -38,6 +38,7 @@ nav.nav-bar--hidden {
   width: 50%;
   height: 100%;
   flex-basis: 50%;
+  font-family: "Poetsen One", sans-serif;
 
   & ul {
     height: 100%;
@@ -47,10 +48,14 @@ nav.nav-bar--hidden {
     width: 100%;
     & li {
       font-size: 1.3em;
-      margin-bottom: 0.4em;
-      & button {
-        &:hover {
-          color: var(--color-accent);
+      margin-bottom: 0.6em;
+      color: white;
+      &:hover {
+        color: var(--text-hover);
+      }
+      & a {
+        &:visited {
+          color: white;
         }
       }
     }
@@ -69,16 +74,28 @@ nav.nav-bar--hidden {
   gap: 10px;
   align-items: center;
   & button {
+    font-size: 1.6rem;
     color: white;
     transition: ease-in-out;
+    &:hover {
+      color: var(--text-hover);
+    }
   }
   & select {
     background-color: transparent;
-    color: var(--font-color);
-    padding: 5px 10px;
+    color: white;
     border-radius: 4px;
+    border: none;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 1.4rem;
+    -webkit-appearance: menulist;
+    &:hover {
+      color: var(--text-hover);
+    }
     & option {
       background-color: var(--bg-main);
+      font-family: "Montserrat", sans-serif;
+      color: var(--font-color);
     }
   }
 }

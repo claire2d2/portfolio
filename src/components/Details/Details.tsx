@@ -5,24 +5,40 @@ import { HiMail } from "react-icons/hi";
 
 const Details = () => {
   return (
-    <div className="Details">
-      <div className="likes">
-        <div>
-          <h3>I like</h3>
+    <div>
+      <section className="part">
+        <h2>{""}</h2>
+        <div className="likes part-content">
+          <div>
+            <h3>I speak</h3>
+            <ul>
+              <li>English</li>
+              <li>Français</li>
+              <li>中文 </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Some things I like 👍</h3>
+            <ul>
+              <li>Solving logic-based problems</li>
+              <li>Learning new things</li>
+              <li>Being active</li>
+              <li>Noodles</li>
+              <li>Noodles</li>
+              <li>Did I mention noodles?</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Some things I dislike 👎</h3>
+            <ul>
+              <li>Doing the same thing over and over again</li>
+              <li>Being ghosted</li>
+              <li>Parisian public transports</li>
+              <li>Coriander</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3>I dislike</h3>
-        </div>
-      </div>
-      <div className="languages">
-        <h3>I speak</h3>
-        <ul>
-          <li>English</li>
-          <li>French</li>
-          <li>Chinese</li>
-        </ul>
-        <div>(y un poco español, si si!)</div>
-      </div>
+      </section>
       <div className="socials">
         <h3>
           🤝 Let's connect!{" "}

@@ -70,21 +70,15 @@ const Navbar = () => {
       <div className="nav-title">Claire Song</div>
       <div className="pages">
         <ul>
-          <li>
-            <HashLink smooth to="#about">
-              About
-            </HashLink>
-          </li>
-          <li>
-            <HashLink smooth to="#projects">
-              Projects
-            </HashLink>
-          </li>
-          <li>
-            <HashLink smooth to="#experiences">
-              Experiences
-            </HashLink>
-          </li>
+          <HashLink smooth to="#about">
+            <li>About</li>
+          </HashLink>
+          <HashLink smooth to="#projects">
+            <li>Projects</li>
+          </HashLink>
+          <HashLink smooth to="#experiences">
+            <li>Experiences</li>
+          </HashLink>
         </ul>
       </div>
       <div className="settings">

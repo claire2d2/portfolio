@@ -1,3 +1,12 @@
+.Contact {
+  & h2 {
+    color: var(--text-main);
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Kaushan Script", sans-serif;
+  }
+}
+
 form {
   width: 50%;
   display: flex;
