@@ -4,6 +4,7 @@ import allProjects from "../../../data/projects.json";
 import FeaturedProjects from "../FeaturedProjects/FeaturedProjects";
 import OneProject from "../OneProject/OneProject";
 import "./Projects.css";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
 const Projects = () => {
   const [showProjects, setShowProjects] = useState<boolean>(false);
@@ -18,7 +19,9 @@ const Projects = () => {
           onClick={() => setShowProjects(!showProjects)}
         >
           <div>See all my projects</div>
-          <div>{showProjects ? "-" : "+"}</div>
+          <div className="sign">
+            {showProjects ? <HiChevronUp /> : <HiChevronDown />}
+          </div>
         </div>
         {showProjects && (
           <div className="show-projects">

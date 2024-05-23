@@ -7,6 +7,24 @@
   }
 }
 
+.show-projects-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 5px;
+  padding: 20px 0;
+  font-style: oblique;
+  color: var(--text-main);
+  & .sign {
+    font-weight: bolder;
+  }
+  &:hover {
+    color: var(--text-hover);
+  }
+}
+
 .show-projects {
   width: 100%;
   display: flex;
