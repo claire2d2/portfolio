@@ -1,5 +1,8 @@
+import { useState } from "react";
 import "./Experiences.css";
+import OneExperience from "./OneExperience";
 const Experiences = () => {
+  const [showMore, setShowMore] = useState<boolean>(false);
   return (
     <div className="Experiences">
       <section className="skills-part">
@@ -47,63 +50,74 @@ const Experiences = () => {
               <div>To be continued ...</div>
             </div>
           </div>
-          <div className="one-experience">
-            <div className="exp-details">
-              <div className="job-title">
-                <div className="bullet" />
-                Digital transformation consultant{" "}
-                <a href="https://mc2i.fr" target="_blank">
-                  @mc2i
-                </a>
-              </div>
-              <div>March 2022 </div>
-              <div>Job description</div>
+          <OneExperience
+            jobTitle="Digital transformation consultant"
+            company="mc2i"
+            companyLink="https://mc2i.fr"
+            date="March 2022 - Present"
+          >
+            <div>Job description</div>
+          </OneExperience>
+          <OneExperience
+            jobTitle="CRM Project Manager"
+            company="Euris"
+            companyLink="https://euris.fr"
+            date="July 2021 - March 2022"
+          >
+            <div>Handling 4 accounts in the APAC region</div>
+          </OneExperience>
+
+          {!showMore && (
+            <button onClick={() => setShowMore(!showMore)}>Show more</button>
+          )}
+
+          {showMore && (
+            <div>
+              <OneExperience
+                jobTitle="Project Manager"
+                company="Fonction:Support"
+                companyLink="https://fonction-support.fr"
+                date="May 2020 - June 2021"
+              >
+                <div>Handling 4 accounts in the APAC region</div>
+              </OneExperience>
+              <OneExperience
+                jobTitle=" IT Consultant & Recruitment Manager"
+                company="Solutec"
+                companyLink="https://solutec.fr"
+                date="July 2018- May 2020"
+              >
+                <div>Handling 4 accounts in the APAC region</div>
+              </OneExperience>
             </div>
-          </div>
-          <div className="one-experience">
-            <div className="exp-details">
-              <div className="job-title">
-                <div className="bullet" />
-                CRM Project Manager{" "}
-                <a href="https://euris.fr" target="_blank">
-                  @Euris
-                </a>
-              </div>
-              <div>July 2021 - March 2022</div>
-              <div>Handling 4 accounts in the APAC region</div>
-            </div>
-          </div>
-          <div className="one-experience">
-            <div className="exp-details">
-              <div className="job-title">
-                <div className="bullet" />
-                Project Manager @Fonction:Support
-              </div>
-              <div>May 2020 - June 2021</div>
-              <div>Job description</div>
-            </div>
-          </div>
-          <div className="one-experience">
-            <div className="exp-details">
-              <div className="job-title">
-                <div className="bullet" />
-                IT Consultant & Recruitment Manager{" "}
-                <a href="https://solutec.fr">@Solutec</a>
-              </div>
-              <div>July 2018- May 2020</div>
-              <div>Job description</div>
-            </div>
-          </div>
+          )}
+          {showMore && (
+            <button onClick={() => setShowMore(!showMore)}>Show less</button>
+          )}
         </div>
       </section>
       <section className="part">
         <h2>Education</h2>
-        <div>Ironhack, emlyon, ECNU</div>
-      </section>
-      <section className="part">
-        <h2>Certifications</h2>
-        <div>Cybersecurity</div>
-        <div>Working on CS50</div>
+        <div>
+          <div>
+            <h5>Ironhack</h5>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem omnis culpa provident asperiores debitis labore, ea
+              maxime quos sunt accusantium commodi ab praesentium fuga odio
+              veniam, dicta harum. Doloremque, inventore?
+            </div>
+          </div>
+          <div>
+            <h5>emlyon business school</h5>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem omnis culpa provident asperiores debitis labore, ea
+              maxime quos sunt accusantium commodi ab praesentium fuga odio
+              veniam, dicta harum. Doloremque, inventore?
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
