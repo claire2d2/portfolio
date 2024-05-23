@@ -8,7 +8,7 @@ import useScrollListener from "../../context/useScrollListener";
 import { HiMoon, HiSun } from "react-icons/hi";
 
 const Navbar = () => {
-  const { darkMode, setDarkMode } = useSettings();
+  const { darkMode, setDarkMode, language, setLanguage } = useSettings();
   const [navClassList, setNavClassList] = useState<string[]>([]);
   const scroll = useScrollListener();
   const [currLocation, setCurrLocation] = useState<string>("");
@@ -77,6 +77,11 @@ const Navbar = () => {
     toggleTheme();
   }, []);
 
+  // handle language change
+  function changeLanguage(lang: string) {
+    setLanguage(lang);
+  }
+
   //TODO make navbar appear and disappear en fonction du scroll
   return (
     <nav className={navClassList.join(" ")}>
@@ -96,13 +101,18 @@ const Navbar = () => {
           <li className={currLocation === "other" ? "featured" : ""}>
             <button onClick={() => changeLocation("other")}>Other</button>
           </li>
+          <li>{language}</li>
         </ul>
       </div>
       <div className="settings">
         <div>
-          <select name="language" id="language">
-            <option value="lang-en">EN</option>
-            <option value="lang-fr">FR</option>
+          <select
+            name="language"
+            id="language"
+            onChange={(e) => changeLanguage(e.target.value)}
+          >
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
           </select>
         </div>
         <button onClick={handleDarkMode}>
