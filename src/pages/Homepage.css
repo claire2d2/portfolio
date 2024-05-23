@@ -74,6 +74,7 @@
   & h2 {
     flex-basis: 20%;
     color: var(--text-main);
+    font-family: "Poetsen One", sans-serif;
   }
   & p {
     padding: 0.5rem;
@@ -112,4 +113,10 @@
     align-items: center;
     gap: 3px;
   }
+}
+
+.scroll-to-top {
+  width: 25%;
+  margin: 10px auto;
+  text-align: center;
 }

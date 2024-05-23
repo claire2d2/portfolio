@@ -30,7 +30,8 @@ p,
 ul,
 li,
 a,
-svg {
+svg,
+span {
   margin: 0;
   padding: 0;
 }
@@ -39,16 +40,16 @@ svg {
   --bg-main: #f8f5f3;
   --color-main: #bf1a2f;
   --text-main: #bf1a2f;
-  --text-hover: #fb543e;
+  --text-hover: #fea195;
   --color-secondary: #fbfbfe;
   --color-accent: #f7d002;
   --font-color: #000000;
 }
 .theme-dark {
   --bg-main: #171c28;
-  --color-main: #171c28;
+  --color-main: #bc5500;
   --text-main: #d87000;
-  --text-hover: #fb9f3e;
+  --text-hover: #fcd0a1;
   --color-secondary: #243133;
   --color-accent: rgb(255, 132, 71);
   --font-color: #fbfbfe;

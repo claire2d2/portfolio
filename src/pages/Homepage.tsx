@@ -60,8 +60,8 @@ const Homepage = () => {
   }, 4000);
 
   return (
-    <div>
-      <section className="header" id="top">
+    <div id="#top">
+      <section className="header">
         <div className="picture">
           <img src={meImg} alt="picture of Claire Song" />
         </div>
@@ -92,9 +92,9 @@ const Homepage = () => {
         </a>
       </section>
       <Contact />
-      <div>
+      <div className="scroll-to-top">
         <HashLink smooth to="#top">
-          Scroll back to top
+          🚀Bop bop bop bop to the top🚀
         </HashLink>
       </div>
     </div>

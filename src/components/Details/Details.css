@@ -7,8 +7,52 @@
   }
 }
 
-ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.socials {
+  background-color: var(--color-main);
+  color: white;
+  & h3 {
+    width: 25%;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 2rem;
+  }
+
+  & #arrow {
+    position: relative;
+    top: 1.5rem;
+    left: 3rem;
+    transform: rotate(0deg);
+    height: 3rem;
+    width: 2rem;
+    fill: var(--text-main);
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-weight: 500;
+    padding: 30px 0;
+    & li,
+    a {
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      color: white;
+      & svg {
+        height: 1.5rem;
+        width: 1rem;
+        fill: white;
+        padding: 0;
+      }
+      &:hover {
+        color: var(--text-hover);
+        & svg {
+          fill: var(--text-hover);
+        }
+      }
+    }
+  }
 }

@@ -1,10 +1,13 @@
+import "./Contact.css";
 const Contact = () => {
   return (
-    <div>
+    <div className="Contact">
       <form action="" id="contact">
         <div>
-          Please note that this form is currently in construction, and will not
-          send any message to me at the moment!
+          <i>
+            Please note that this form is currently in construction, and will
+            not send any message to me at the moment!
+          </i>
         </div>
         <label htmlFor="email">Your contact information:</label>
         <input type="email" required />
@@ -16,8 +19,10 @@ const Contact = () => {
         </select>
         <label htmlFor="content">Message:</label>
         <input type="text" className="message-content" />
-        <label htmlFor="robot">I am not a robot</label>
-        <input type="checkbox" id="robot" name="robot" />
+        <div className="not-a-robot">
+          <input type="checkbox" id="robot" name="robot" />
+          <label htmlFor="robot">I am not a robot</label>
+        </div>
         <button>Send</button>
       </form>
     </div>

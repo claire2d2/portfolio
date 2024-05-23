@@ -1,0 +1,19 @@
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  & label {
+    text-align: left;
+  }
+  & input {
+    padding: 0.1rem;
+  }
+  & select {
+    padding: 0.3rem;
+  }
+}
+
+.not-a-robot {
+  display: flex;
+}
