@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 // import { useNavigate } from "react-router-dom";
+import useSettings from "../context/useSettings";
 
 import About from "../components/About/About";
 
@@ -13,25 +14,47 @@ import cache from "../assets/images/cachethemall-screenshot.png";
 import resume from "../assets/resume/CV_ClaireSong_FR.pdf";
 
 const Homepage = () => {
+  const { language } = useSettings();
   const [isTyping, setIsTyping] = useState<boolean>(false);
-  const [profession, setProfession] = useState<string>("Web Developer");
+  const [professionEn, setProfessionEn] = useState<string>("Web Developer");
+  const [professionFr, setProfessionFr] = useState<string>("Développeuse Web");
 
   setTimeout(() => {
     setIsTyping(!isTyping);
   }, 2000);
   // TODO : clean up
+
+  // english
+
   setTimeout(() => {
-    if (profession === "Web Developer") {
-      setProfession("Bad karaoke singer");
+    if (professionEn === "Web Developer") {
+      setProfessionEn("Bad karaoke singer");
     }
-    if (profession === "Bad karaoke singer") {
-      setProfession("Manga enthusiast");
+    if (professionEn === "Bad karaoke singer") {
+      setProfessionEn("Manga enthusiast");
     }
-    if (profession === "Manga enthusiast") {
-      setProfession("Pole dance amateur");
+    if (professionEn === "Manga enthusiast") {
+      setProfessionEn("Pole dance amateur");
     }
-    if (profession === "Pole dance amateur") {
-      setProfession("Web Developer");
+    if (professionEn === "Pole dance amateur") {
+      setProfessionEn("Web Developer");
+    }
+  }, 4000);
+
+  // french
+
+  setTimeout(() => {
+    if (professionFr === "Développeuse Web") {
+      setProfessionFr("Chanteuse sous la douche");
+    }
+    if (professionFr === "Chanteuse sous la douche") {
+      setProfessionFr("Fan de manga");
+    }
+    if (professionFr === "Fan de manga") {
+      setProfessionFr("Amatrice de pole dance");
+    }
+    if (professionFr === "Amatrice de pole dance") {
+      setProfessionFr("Développeuse Web");
     }
   }, 4000);
 
@@ -47,11 +70,15 @@ const Homepage = () => {
           <img src={meImg} alt="picture of Claire Song" />
         </div>
         <div className="intro">
-          <h1>Hi there! ✌️</h1>
-          <div>I'm Claire, and I'm a :</div>
+          <h1>Hello world ✌️</h1>
+          {language === "en" ? (
+            <div>I'm Claire, and I'm a :</div>
+          ) : (
+            <div>Je m'appelle Claire, et je suis : </div>
+          )}
           <div className="typing-container">
             <div className={isTyping ? "erasing" : "typed-out"}>
-              {profession}
+              {language === "en" ? professionEn : professionFr}
             </div>
           </div>
         </div>
