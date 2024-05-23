@@ -65,6 +65,7 @@ const Homepage = () => {
         <div className="picture">
           <img src={meImg} alt="picture of Claire Song" />
         </div>
+        <div id="about" />
         <div className="intro">
           <h1>Hello world ✌️</h1>
           {language === "en" ? (
@@ -81,8 +82,9 @@ const Homepage = () => {
       </section>
       <About />
       <Details />
+      <div id="projects" />
       <Projects />
-      <section className="project-section" id="projects"></section>
+      <div id="experiences" />
       <Experiences />
       <section className="resume">
         <a href={resume} target="_blank">

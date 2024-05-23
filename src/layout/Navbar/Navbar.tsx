@@ -1,6 +1,7 @@
 import useSettings from "../../context/useSettings";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // style
 import "./Navbar.css";
@@ -8,7 +9,7 @@ import useScrollListener from "../../context/useScrollListener";
 import { HiMoon, HiSun } from "react-icons/hi";
 
 const Navbar = () => {
-  const { darkMode, setDarkMode, language, setLanguage } = useSettings();
+  const { darkMode, setDarkMode, setLanguage } = useSettings();
   const [navClassList, setNavClassList] = useState<string[]>([]);
   const scroll = useScrollListener();
   const [currLocation, setCurrLocation] = useState<string>("");
@@ -28,10 +29,7 @@ const Navbar = () => {
     setCurrLocation(location.pathname.split("/")[1]);
   }, []);
 
-  const navigate = useNavigate();
-
   function changeLocation(destination: string) {
-    navigate(`/${destination}`);
     setCurrLocation(destination);
     scrollToTop();
   }
@@ -90,18 +88,33 @@ const Navbar = () => {
       </div>
       <div className="pages">
         <ul>
-          <li className={currLocation === "projects" ? "featured" : ""}>
-            <button onClick={() => changeLocation("projects")}>Projects</button>
+          <li>
+            <HashLink
+              smooth
+              to="#about"
+              onClick={() => changeLocation("about")}
+            >
+              About
+            </HashLink>
           </li>
-          <li className={currLocation === "experiences" ? "featured" : ""}>
-            <button onClick={() => changeLocation("experiences")}>
+          <li>
+            <HashLink
+              smooth
+              to="#projects"
+              onClick={() => changeLocation("projects")}
+            >
+              Projects
+            </HashLink>
+          </li>
+          <li>
+            <HashLink
+              smooth
+              to="#experiences"
+              onClick={() => changeLocation("experiences")}
+            >
               Experiences
-            </button>
+            </HashLink>
           </li>
-          <li className={currLocation === "other" ? "featured" : ""}>
-            <button onClick={() => changeLocation("other")}>Other</button>
-          </li>
-          <li>{language}</li>
         </ul>
       </div>
       <div className="settings">
