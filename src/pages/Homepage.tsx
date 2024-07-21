@@ -12,7 +12,7 @@ import Contact from "../components/Contact/Contact";
 import "./Homepage.css";
 import meImg from "../assets/images/me.jpeg";
 import { HiExternalLink } from "react-icons/hi";
-import resume from "../assets/resume/CV_ClaireSong_FR.pdf";
+import resume from "../assets/resume/CVSiteFR.pdf";
 
 const Homepage = () => {
   const { language } = useSettings();
