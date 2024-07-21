@@ -108,3 +108,11 @@ nav.nav-bar--hidden {
     opacity: 100%;
   }
 }
+
+/* responsiveness for the nav bar, hiding "pages" section*/
+
+@media all and (min-width: 320px) and (max-width: 991px) and (orientation: portrait) {
+  .pages {
+    display: none;
+  }
+}
