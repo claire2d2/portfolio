@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useSettings from "../../../context/useSettings";
 
 import allProjects from "../../../data/projects.json";
 import FeaturedProjects from "../FeaturedProjects/FeaturedProjects";
@@ -7,10 +8,15 @@ import "./Projects.css";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
 const Projects = () => {
+  const { language } = useSettings();
   const [showProjects, setShowProjects] = useState<boolean>(false);
   return (
     <div className="Projects">
-      <h2>Some of my projects:</h2>
+      <h2>
+        {language === "en"
+          ? "Some of my projects:"
+          : "Quelques uns de mes projets"}
+      </h2>
       <FeaturedProjects />
 
       <div className="all-projects">
@@ -18,7 +24,11 @@ const Projects = () => {
           className="show-projects-button"
           onClick={() => setShowProjects(!showProjects)}
         >
-          <div>See all my projects</div>
+          <div>
+            {language === "en"
+              ? "See all my projects"
+              : "Voir tous mes projets"}
+          </div>
           <div className="sign">
             {showProjects ? <HiChevronUp /> : <HiChevronDown />}
           </div>
@@ -28,9 +38,13 @@ const Projects = () => {
             {allProjects.map((project) => {
               return (
                 <OneProject
-                  name={project.name}
+                  name={language === "en" ? project.name : project.nom}
                   date={project.date}
-                  description={project.description}
+                  description={
+                    language === "en"
+                      ? project.description
+                      : project.description_fr
+                  }
                   labels={project.labels}
                   codeLink={project.code}
                   link={project.link}
