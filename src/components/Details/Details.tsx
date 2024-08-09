@@ -1,4 +1,3 @@
-import { HashLink } from "react-router-hash-link";
 import useSettings from "../../context/useSettings";
 
 import "./Details.css";
@@ -120,11 +119,10 @@ const Details = () => {
             </a>
           </li>
           <li>
-            <HashLink smooth to="#contact">
-              <HiMail />
-
-              <span>{language === "fr" ? "Contactez-moi" : "Contact me"}</span>
-            </HashLink>
+            <HiMail />
+            <span>
+              {language === "fr" ? "Contactez-moi" : "Contact me"} (coming soon)
+            </span>
           </li>
         </ul>
       </div>
