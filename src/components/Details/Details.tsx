@@ -13,7 +13,7 @@ const Details = () => {
         <h2>{""}</h2>
         <div className="likes part-content">
           <div>
-            <h3>I speak</h3>
+            <h3>{language === "en" ? "I speak" : "Je parle"}</h3>
             <ul>
               <li>English</li>
               <li>Français</li>
@@ -21,24 +21,45 @@ const Details = () => {
             </ul>
           </div>
           <div>
-            <h3>Some things I like 👍</h3>
-            <ul>
-              <li>Solving logic-based problems</li>
-              <li>Learning new things</li>
-              <li>Being active</li>
-              <li>Noodles</li>
-              <li>Noodles</li>
-              <li>Did I mention noodles?</li>
-            </ul>
+            <h3>{language === "en" ? "Some things I like " : "J'aime "}👍</h3>
+            {language === "en" ? (
+              <ul>
+                <li>Solving logic-based problems</li>
+                <li>Learning new things</li>
+                <li>Being active</li>
+                <li>Noodles</li>
+                <li>Noodles</li>
+                <li>Did I mention noodles?</li>
+              </ul>
+            ) : (
+              <ul>
+                <li>Résoudre des énigmes</li>
+                <li>Apprendre de nouvelles choses</li>
+                <li>Être active</li>
+                <li>Les nouilles</li>
+                <li>Les nouilles</li>
+                <li>Je vous ai dit que j'aimais les nouilles ?</li>
+              </ul>
+            )}
           </div>
           <div>
-            <h3>Some things I dislike 👎</h3>
-            <ul>
-              <li>Doing the same thing over and over again</li>
-              <li>Being ghosted</li>
-              <li>Parisian public transports</li>
-              <li>Coriander</li>
-            </ul>
+            <h3>
+              {language === "en" ? "Some things I dislike " : "Je n'aime pas "}
+              👍
+            </h3>
+            {language === "en" ? (
+              <ul>
+                <li>Doing the same thing over and over again</li>
+                <li>Parisian public transports</li>
+                <li>Coriander</li>
+              </ul>
+            ) : (
+              <ul>
+                <li>Faire tout le temps la même chose</li>
+                <li>Passer sa vie dans les transports</li>
+                <li>La coriandre</li>
+              </ul>
+            )}
           </div>
         </div>
       </section>
