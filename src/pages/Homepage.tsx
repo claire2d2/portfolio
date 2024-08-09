@@ -7,7 +7,7 @@ import About from "../components/About/About";
 import Details from "../components/Details/Details";
 import Projects from "../components/Projects/Projects/Projects";
 import Experiences from "../components/Experiences/Experiences";
-import Contact from "../components/Contact/Contact";
+// import Contact from "../components/Contact/Contact";
 
 import "./Homepage.css";
 import meImg from "../assets/images/me.jpeg";
@@ -88,10 +88,11 @@ const Homepage = () => {
       <Experiences />
       <section className="resume">
         <a href={resume} target="_blank">
-          <div>My resume</div> <HiExternalLink />
+          <div>{language === "en" ? "My resume" : "Mon CV"}</div>{" "}
+          <HiExternalLink />
         </a>
       </section>
-      <Contact />
+      {/* <Contact /> */}
       <div className="scroll-to-top">
         <HashLink smooth to="#top">
           🚀Bop bop bop bop to the top🚀
