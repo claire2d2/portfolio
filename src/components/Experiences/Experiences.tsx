@@ -1,15 +1,17 @@
 import { useState } from "react";
+import useSettings from "../../context/useSettings";
 import "./Experiences.css";
 import OneExperience from "./OneExperience";
 const Experiences = () => {
+  const { language } = useSettings();
   const [showMore, setShowMore] = useState<boolean>(false);
   return (
     <div className="Experiences">
       <section className="skills-part">
-        <h2>Technical Skills:</h2>
+        <h2>{language === "en" ? "Technical Skills:" : "Compétences tech"}</h2>
         <div className="skills-content">
           <div className="skills">
-            <h3>Languages</h3>
+            <h3>{language === "en" ? "Languages" : "Langages"}</h3>
             <ul>
               <li>Javascript (ES6)</li>
               <li>Typescript</li>
@@ -44,10 +46,10 @@ const Experiences = () => {
             <div className="exp-details">
               <div className="job-title">
                 <div className="bullet bullet-tech" />
-                Web Developer @Your Company ?
+                Web Developer{" "}
+                {language === "en" ? "@Your Company?" : "@Chez vous ? "}
               </div>
               <div>March 2024 - Present </div>
-              <div>To be continued ...</div>
             </div>
           </div>
           <OneExperience
@@ -55,17 +57,13 @@ const Experiences = () => {
             company="mc2i"
             companyLink="https://mc2i.fr"
             date="March 2022 - Present"
-          >
-            <div>Job description</div>
-          </OneExperience>
+          />
           <OneExperience
             jobTitle="CRM Project Manager"
             company="Euris"
             companyLink="https://euris.fr"
             date="July 2021 - March 2022"
-          >
-            <div>Handling 4 accounts in the APAC region</div>
-          </OneExperience>
+          ></OneExperience>
 
           {!showMore && (
             <button onClick={() => setShowMore(!showMore)}>Show more</button>
@@ -78,17 +76,13 @@ const Experiences = () => {
                 company="Fonction:Support"
                 companyLink="https://fonction-support.fr"
                 date="May 2020 - June 2021"
-              >
-                <div>Handling 4 accounts in the APAC region</div>
-              </OneExperience>
+              ></OneExperience>
               <OneExperience
                 jobTitle=" IT Consultant & Recruitment Manager"
                 company="Solutec"
                 companyLink="https://solutec.fr"
                 date="July 2018- May 2020"
-              >
-                <div>Handling 4 accounts in the APAC region</div>
-              </OneExperience>
+              ></OneExperience>
             </div>
           )}
           {showMore && (
@@ -101,21 +95,20 @@ const Experiences = () => {
         <div>
           <div>
             <h5>Ironhack</h5>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem omnis culpa provident asperiores debitis labore, ea
-              maxime quos sunt accusantium commodi ab praesentium fuga odio
-              veniam, dicta harum. Doloremque, inventore?
-            </div>
+            {language === "en" ? (
+              <div>
+                9 week intensive bootcamp to become a certified Web Developer.
+              </div>
+            ) : (
+              <div>
+                Formation intensive de 9 semaines en développement Web,
+                certifiante RNCP Niveau 6.
+              </div>
+            )}
           </div>
           <div>
             <h5>emlyon business school</h5>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem omnis culpa provident asperiores debitis labore, ea
-              maxime quos sunt accusantium commodi ab praesentium fuga odio
-              veniam, dicta harum. Doloremque, inventore?
-            </div>
+            <div>Msc in Management</div>
           </div>
         </div>
       </section>

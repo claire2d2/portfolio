@@ -1,10 +1,8 @@
-import { ReactNode } from "react";
 type OneExperienceProps = {
   jobTitle: string;
   company: string;
   companyLink: string;
   date: string;
-  children: ReactNode;
 };
 
 const OneExperience: React.FC<OneExperienceProps> = ({
@@ -12,7 +10,6 @@ const OneExperience: React.FC<OneExperienceProps> = ({
   company,
   companyLink,
   date,
-  children,
 }) => {
   return (
     <div className="one-experience">
@@ -25,7 +22,6 @@ const OneExperience: React.FC<OneExperienceProps> = ({
           </a>
         </div>
         <div>{date} </div>
-        <div>{children}</div>
       </div>
     </div>
   );
